@@ -1,0 +1,115 @@
+#root {
+  margin: 0 auto;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+
+.header{
+  width: 100%;
+  text-align: "center";
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.conversation-wrapper{
+  margin: 0 auto;
+  width: 100%;
+  max-height: calc(100vh - 16rem);
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 14px;
+}
+
+.query{
+  max-width: 60%;
+  border: 1px solid #fff;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+}
+
+.response{
+  max-width: 60%;
+  background-color: #fff;
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+  border-radius: 0.2rem;
+  color: #000;
+}
+
+.jocer-image{
+  border-radius: 50%;
+  animation: fadeInFromNone 2s ease-in-out infinite;
+}
+
+.qna{
+  padding: 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.conversation-footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-handler{
+  width: 50%;
+  position: fixed;
+  bottom: 5%;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+@media all and (max-width: 767px){
+  .input-handler{
+    width: 90%;
+  }
+}
+
+.qinput{
+  width: 100%;
+  background: #fff;
+  border-radius: 0.2rem;
+  border: none;
+  min-height: 2rem;
+  color: #000;
+  padding: 0rem 0.5rem;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  25%{
+    display: block;
+    opacity: 0;
+  }
+
+  50% {
+      display: block;
+      opacity: 1;
+  }
+
+  75%{
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+      display: none;
+      opacity: 0;
+  }
+}
